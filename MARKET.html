@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>MeQween Market</title>
+        <link rel="stylesheet" href="CSS/NORMALIZE.CSS">
+        <link id="style" rel="stylesheet" href="CSS/MARKET.css">
+        <link rel="stylesheet" type="text/css" href="FONTS/font-awesome-4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript">
+            function change(sheetName){
+                document.getElementById('style').setAttribute('href',sheetName);
+            }
+        </script>
+    </head>
+    <body>
+        <button class="DarkMode" onclick="change('CSS/MARKETDARK.css')"></button>
+        <button class="Default" onclick="change('CSS/MARKET.css')"></button>
+        <!-- navigation bar -->
+        <header>
+            <h1>Lightning MeQween</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>HOME</a></li>
+                    <li><a href="TRAINING.html"><i class="fa fa-car" aria-hidden="true"></i>TRAINING</a></li>
+                    <li><a href="MARKET.html" class="current"><i class="fa fa-shopping-cart" aria-hidden="true"></i>MARKET</a></li>
+                    <li><a href="TEAM.html"><i class="fa fa-users" aria-hidden="true"></i>TEAM</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- New, Used & Upcoming cars -->
+        <section class="specials">
+            <div>
+                <img src="IMAGES/buy%20new.jpg">
+                <a href="BUY%20NEW.html">Buy A New Car</a>
+            </div>
+            <div>
+                <img src="IMAGES/rent%20car.jpg">
+                <a href="rent%20car.html">Rent A Car</a>
+            </div>
+            <div>
+                <img src="IMAGES/coming%20soon.jpg">
+                <a href="coming%20soon.html">Coming Soon</a>
+            </div>
+        </section>
+        
+        <!-- footer & social edia icons -->
+        <footer>
+            <div class="media">
+                <a class="btn" href="http://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a class="btn" href="http://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a class="btn" href="http://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a class="btn" href="http://www.youtube.com"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                <a class="btn" href="http://www.google.com"><i class="fa fa-google" aria-hidden="true"></i></a>
+            </div>
+        </footer>
+    </body>
+</html>

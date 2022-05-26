@@ -1,0 +1,228 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("../IMAGES/home%20cover.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+/* switch buttons style */
+.DarkMode, .Default{
+    position: absolute;
+    top: 4%;
+    left: 4%;
+    width: 1%;
+    height: 2%;
+    border-radius: 50%;
+    outline: none;
+    border: 1px solid #FFF;
+    background: #000;
+    z-index: 2;
+    box-shadow: 1px 1px 3px #fff,
+        -1px -1px 3px #fff;
+}
+.Default{
+    left: 4%;
+    background: #fff;
+    border: 1px solid #000;
+    z-index: 1;
+}
+/* header & nav bar style */
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: #1383b4;
+}
+header h1{
+    width: 40%;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 10px #fff;
+}
+header nav{
+    width: 40%;
+    margin-right: 5%;
+    margin-top: 1.2%;
+    white-space: nowrap;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+header nav ul i{
+    margin-right: 5px;
+}
+header nav ul a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all ease-in-out 0.5s;
+}
+.current,header nav ul a:hover{
+    background: rgba(0, 0, 0, 0.7);
+    text-shadow: 0 0 10px #fff;
+}
+/* nav bar rsponsive */
+@media (max-width: 1200px){
+    header{
+        display: block;
+        padding: 10px;
+    }
+    header h1{
+        width: 100%;
+        text-align: center;
+        color: #fff;
+        text-shadow: 0 0 10px #fff;
+    }
+    header nav{
+        width: 100%;
+        margin-top: 1.2%;
+        white-space: nowrap;
+    }
+}
+/* login & signup */
+.choice{
+    width: 27%;
+    background: rgba(0, 0, 0, 0.6);
+    float: left;
+    border-radius: 30px;
+    margin-top: 200px;
+    margin-left: 5%;
+    box-shadow: 0 3px 10px #fff;
+}
+.choice button{
+    width: 25%;
+    margin-left: 37.5%;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    background: #1383b4;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 5px;
+    color: #fff;
+    font-size: 22px;
+    outline: none;
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
+}
+.choice button:hover{
+    transform: scale(1.3);
+    border: 1px solid #fff;
+    border-radius: 20px;
+    text-shadow: 0 0 10px #fff;
+}
+/* abut us */
+.about{
+    width: 45%;
+    float: right;
+    background: rgba(0, 0, 0, 0.6);
+    margin-top: 140px;
+    margin-right: 5%;
+    border-radius: 50px;
+    padding: 30px;
+    color: #FFF;
+    box-shadow: 0 2px 5px #FFF;
+}
+.about h1{
+    margin-bottom: 40px;
+    font-family: 'Averia Serif Libre', cursive;
+    color: #FFF;
+}
+.about p{
+    margin-left: 20px;
+    font-family: cursive;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+.about .skills{
+    display: flex;
+    justify-content: space-between;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 25px;
+    margin-top: 40px;
+    font-family: 'Lexend Tera', sans-serif;
+}
+.clear{
+    clear: both;
+}
+@media (max-width: 1200px){
+    .choice{
+        float: none;
+        width: 50%;
+        margin-left: 25%;
+    }
+    .about{
+        float: none;
+        width: 70%;
+        margin-left: 15%;
+    }
+}
+/* most selling cars */
+.most{
+    width: 90%;
+    border-collapse: collapse;
+    margin-top: 100px;
+    margin-left: 5%;
+    color: #FFF;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 5px #FFF;
+    border-radius: 50px;
+}
+.most th,td{
+    border: 5px solid #ddd;
+    border-top: none;
+    padding: 8px;
+    width: 33.3%;
+    border-radius: 10px;
+}
+/* footer style */
+footer{
+    margin-top: 100px;
+    width: 100%;
+    height: 150px;
+    background: #1383b4;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.media{
+    margin-left: 30%;
+    width: 40%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+}
+.btn{
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    box-shadow: 0 5px 10px #FFF;
+    color: #0c5e94;
+    overflow: hidden;
+    position: relative;
+    transition: 0.7s ease-in-out;
+}
+.btn i{
+    color: #a5a5a5;
+    line-height: 90px;
+    font-size: 26px;
+    transition: 0.7s ease-in-out;
+}
+.btn:hover{
+    background: transparent;
+    transform: rotate(720deg);
+    box-shadow: 0 0 0 0 #FFF;
+}
+.btn:hover i{
+    transform: scale(2);
+    color: #FFF;
+    text-shadow: 0 0 10px #FFF;
+}

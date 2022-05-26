@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>MeQween Training</title>
+        <link rel="stylesheet" href="CSS/NORMALIZE.CSS">
+        <link id="style" rel="stylesheet" href="CSS/TRAINING.css">
+        <link rel="stylesheet" type="text/css" href="FONTS/font-awesome-4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript">
+            function change(sheetName){
+                document.getElementById('style').setAttribute('href',sheetName);
+            }
+        </script>
+    </head>
+    <body>
+        <button class="DarkMode" onclick="change('CSS/TRAININGDARK.css')"></button>
+        <button class="Default" onclick="change('CSS/TRAINING.css')"></button>
+        <!-- navigation bar -->
+        <header>
+            <h1>Lightning MeQween</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>HOME</a></li>
+                    <li><a href="TRAINING.html" class="current"><i class="fa fa-car" aria-hidden="true"></i>TRAINING</a></li>
+                    <li><a href="MARKET.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i>MARKET</a></li>
+                    <li><a href="TEAM.html"><i class="fa fa-users" aria-hidden="true"></i>TEAM</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- training form -->
+        <section class="trform">
+            <form class="form" id="form">
+                <legend><i class="fa fa-user-circle-o" aria-hidden="true"></i></legend>
+                <div class="control">
+                    <label>FULL NAME:</label>
+                    <input type="text" placeholder="enter your name" id="username">
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                    <small></small>
+                </div>
+                <div class="control">
+                    <label>EMAIL:</label>
+                    <input type="email" placeholder="enter your email" id="email">
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                    <small></small>
+                </div>
+                <div class="control">
+                    <label>AGE:</label>
+                    <input type="number" placeholder="age 18 : 38" id="age">
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                    <small></small>
+                </div>
+                <div class="control">
+                    <label>PHONE NUMBER:</label>
+                    <input type="tel" placeholder="enter your phone number" id="phone">
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                    <small></small>
+                </div>
+                <div class="control">
+                    <label>NATIONAL ID:</label>
+                    <input type="password" placeholder="enter your national ID" id="ID">
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                    <small></small>
+                </div>
+                <div class="control">
+                    <input type="radio" id="male" value="male">
+                    <span>male</span>
+                    <input type="radio" id="female" value="female">
+                    <span>female</span>
+                </div>
+                <button>Submit</button>
+            </form>
+        </section>
+        
+        <!-- training information -->
+        <section class="trinfo">
+            <h1>Why Choose Us?</h1>
+            <p>Knowing how to drive a car is no longer a luxury, it's a necessity!</p>
+            <div><i class="fa fa-graduation-cap" aria-hidden="true"></i><h2>HAPPY STUDENTS</h2><br>We have successfully transformed 13 08 699 beginners into skilled and confident drivers.</div>
+            <div><i class="fa fa-certificate" aria-hidden="true"></i><h2>CERTIFIED TRAINERS</h2><br>Get driving training from our team of driving professionals that has 1 328 certified male and female trainers.</div>
+            <div><i class="fa fa-star" aria-hidden="true"></i><h2>TRAINING SCHOOLS</h2><br>We have made quality driving training accessible with our widespread network of 475+ Training Schools.</div>
+        </section>
+        
+        <!-- clear floating -->
+        <div class="clear"></div>
+        
+        <!-- footer & social edia icons -->
+        <footer>
+            <div class="media">
+                <a class="btn" href="http://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a class="btn" href="http://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a class="btn" href="http://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a class="btn" href="http://www.youtube.com"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                <a class="btn" href="http://www.google.com"><i class="fa fa-google" aria-hidden="true"></i></a>
+            </div>
+        </footer>
+        
+        <!-- script calling -->
+        <script type="text/javascript" src="JS/TRAINING.js"></script>
+    </body>
+</html>

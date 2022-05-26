@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Lightning MeQween</title>
+        <link rel="stylesheet" href="CSS/NORMALIZE.CSS">
+        <link id="style" rel="stylesheet" href="CSS/HOME.css">
+        <link rel="stylesheet" type="text/css" href="FONTS/font-awesome-4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript">
+            function change(sheetName){
+                document.getElementById('style').setAttribute('href',sheetName);
+            }
+        </script>
+    </head>
+    <body>
+        <button class="DarkMode" onclick="change('CSS/HOMEDARK.css')"></button>
+        <button class="Default" onclick="change('CSS/HOME.css')"></button>
+        <!-- navigation bar -->
+        <header>
+            <h1>Lightning MeQween</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="current"><i class="fa fa-home" aria-hidden="true"></i>HOME</a></li>
+                    <li><a href="TRAINING.html"><i class="fa fa-car" aria-hidden="true"></i>TRAINING</a></li>
+                    <li><a href="MARKET.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i>MARKET</a></li>
+                    <li><a href="TEAM.html"><i class="fa fa-users" aria-hidden="true"></i>TEAM</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- log in / sign up -->
+        <section class="choice">
+            <button onclick="signIn()">sign in</button>
+            <p style="margin-left: 30%; font-size: 25px; color: #fff;">Don't have account?</p>
+            <button onclick="signUp()">sign up</button>
+        </section>
+        <!-- JS for it -->
+        <script type="text/javascript">
+            function signIn() {
+                window.open("sign.html");
+            }
+            function signUp() {
+                window.open("sign up.html");
+            }
+        </script>
+        
+        <!-- about us -->
+        <section class="about">
+            <h1>ABOUT US</h1>
+            <p class="text">"Lightning McQueen" is a leading digital marketplace and solutions provider for the automotive industry that connects car shoppers with sellers. Launched in 1998 and headquartered in Chicago, the Company empowers shoppers with the data, resources and digital tools needed to make informed buying decisions and seamlessly connect with automotive retailers. In a rapidly changing market, Cars.com enables dealerships and OEMs with innovative technical solutions and data-driven intelligence to better reach and influence ready-to-buy shoppers, increase inventory turn and gain market share.</p>
+            <div class="skills">
+                <span>Buy New Car</span>
+                <span>Sell Your Car</span>
+                <span>Rental Any Car</span>
+            </div>
+        </section>
+        
+        <!-- clear the float -->
+        <div class="clear"></div>
+        
+        <!-- most selling cars -->
+        <table class="most">
+            <tr>
+                <th style="border-left: none;">AUDI</th>
+                <th style="border-left: none;">CHEVROLET</th>
+                <th style="border-right: none;">HYUNDAI</th>
+            </tr>
+            <tr>
+                <td style="border-left: none;"><img src="IMAGES/Audi-emblem.jpg" style="width: 100%;"></td>
+                <td><img src="IMAGES/Chevrolet-logo-emblem-symbol.jpg" style="width: 100%;"></td>
+                <td style="border-right: none;"><img src="IMAGES/Hyundai-emblem-5.jpg" style="width: 100%;"></td>
+            </tr>
+            <tr>
+                <th style="border-bottom: none; border-left: none;">32k Customers</th>
+                <th style="border-bottom: none;">30k Customers</th>
+                <th style="border-bottom: none; border-right: none;">31k customers</th>
+            </tr>
+        </table>
+        
+        <!-- footer & social edia icons -->
+        <footer>
+            <div class="media">
+                <a class="btn" href="http://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a class="btn" href="http://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a class="btn" href="http://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a class="btn" href="http://www.youtube.com"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                <a class="btn" href="http://www.google.com"><i class="fa fa-google" aria-hidden="true"></i></a>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,295 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("../IMAGES/training%20dark%20cover.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+/* switch buttons style */
+.DarkMode, .Default{
+    position: absolute;
+    top: 4%;
+    left: 4%;
+    width: 1%;
+    height: 2%;
+    border-radius: 50%;
+    outline: none;
+    border: 1px solid #FFF;
+    background: #000;
+    z-index: 1;
+    box-shadow: 1px 1px 3px #fff,
+        -1px -1px 3px #fff;
+}
+.Default{
+    left: 4%;
+    background: #fff;
+    border: 1px solid #000;
+    z-index: 2;
+}
+/* header & nav bar style */
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: #07031a;
+}
+header h1{
+    width: 40%;
+    text-align: center;
+    color: #fefde1;
+    text-shadow: 0 0 10px #fff;
+}
+header nav{
+    width: 40%;
+    margin-right: 5%;
+    margin-top: 1.2%;
+    white-space: nowrap;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+header nav ul i{
+    margin-right: 5px;
+}
+header nav ul a{
+    text-decoration: none;
+    color: #fefde1;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all ease-in-out 0.5s;
+}
+.current,header nav ul a:hover{
+    background: rgba(0, 0, 0, 0.7);
+    text-shadow: 0 0 10px #fff;
+}
+/* nav bar rsponsive */
+@media (max-width: 1200px){
+    header{
+        display: block;
+        padding: 10px;
+    }
+    header h1{
+        width: 100%;
+        text-align: center;
+    }
+    header nav{
+        width: 100%;
+        margin-top: 1.2%;
+        white-space: nowrap;
+    }
+}
+/* training form style */
+.trform{
+    width: 25%;
+    margin-top: 5%;
+    margin-left: 5%;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 50px;
+    box-shadow: 0 2px 5px #FFF;
+    overflow: hidden;
+    padding-bottom: 10px;
+    float: left;
+}
+.form legend{
+    font-size: 90px;
+    width: 100%;
+    text-align: center;
+    background: #0c052d;
+    color: #fefde1;
+}
+.control{
+    padding-bottom: 20px;
+    position: relative;
+}
+.control label{
+    display: inline-block;
+    font-family: monospace;
+    margin-top: 20px;
+    margin-left: 15%;
+    color: #fefde1;
+    font-weight: 700;
+    font-size: 20px;
+}
+.control input{
+    display: block;
+    padding: 5px;
+    font-size: 14px;
+    width: 70%;
+    height: 20px;
+    margin-left: 15%;
+    background: #1f1f22;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #FFF;
+    border-radius: 5px;
+    color: #fefde1;
+    transition: 0.35s ease-in-out;
+}
+.control input[type="number"]{
+    width: 20%;
+}
+.control input[type="radio"]{
+    width: 20px;
+    display: inline;
+}
+.trform input:focus{
+    background: #FFF;
+    color: #000;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #7f080a;
+}
+.trform span{
+    color: azure;
+    font-family: monospace;
+    font-weight: 700;
+    font-size: 20px;
+}
+.control.success input{
+    border-bottom: 2px solid #2ecc71;
+}
+.control.error input{
+    border-bottom: 2px solid #e74c3c;
+}
+.control i{
+    position: absolute;
+    top: 50px;
+    right: 75px;
+    visibility: hidden;
+}
+.control.success i.fa-check-circle{
+    visibility: visible;
+    color: #2ecc71;
+}
+.control.error i.fa-exclamation-circle{
+    visibility: visible;
+    color: #e74c3c;
+}
+.control small{
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    visibility: hidden;
+}
+.control.error small{
+    color: #e74c3c;
+    visibility: visible;
+}
+.form button{
+    background: #0c052d;
+    border-radius: 4px;
+    color: #FFF;
+    display: block;
+    font-size: 16px;
+    width: 30%;
+    margin-left: 35%;
+    padding: 5px;
+    cursor: pointer;
+}
+/* training information */
+.trinfo{
+    background: rgba(0, 0, 0, 0.9);
+    width: 55%;
+    margin-top: 6.5%;
+    margin-right: 5%;
+    border-radius: 50px;
+    box-shadow: 0 2px 5px #FFF;
+    overflow: hidden;
+    float: right;
+}
+.trinfo h1{
+    margin-left: 50px;
+    margin-bottom: 0;
+    font-family: 'Averia Serif Libre', cursive;
+    margin-top: 50px;
+    color: #fefde1;
+}
+.trinfo p{
+    margin-left: 70px;
+    margin-bottom: 30px;
+    color: rgb(142, 196, 230);
+    font-family: 'Averia Serif Libre', cursive;
+}
+.trinfo div{
+    margin-left: 60px;
+    margin-bottom: 70px;
+    color: #fefde1;
+    font-family: 'Lexend Tera', sans-serif;
+}
+.trinfo div h2{
+    display: inline;
+    color: rgb(157, 216, 253);
+    font-family: 'Lexend Tera', sans-serif;
+}
+.trinfo div i{
+    font-size: 50px;
+    margin-right: 20px;
+    color: rgb(114, 157, 184);
+}
+/* training responsive */
+@media (max-width: 1200px){
+    .trform{
+        float: none;
+        width: 50%;
+        margin-left: 25%;
+    }
+    .trinfo{
+        float: none;
+        width: 70%;
+        margin-left: 15%;
+    }
+}
+/* clear floating */
+.clear{
+    clear: both;
+}
+/* footer style */
+footer{
+    margin-top: 100px;
+    width: 100%;
+    height: 150px;
+    background: #080412;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.media{
+    margin-left: 30%;
+    width: 40%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+}
+.btn{
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    box-shadow: 0 5px 10px #FFF;
+    color: #0c5e94;
+    overflow: hidden;
+    position: relative;
+    transition: 0.7s ease-in-out;
+}
+.btn i{
+    color: #a5a5a5;
+    line-height: 90px;
+    font-size: 26px;
+    transition: 0.7s ease-in-out;
+}
+.btn:hover{
+    background: transparent;
+    transform: rotate(720deg);
+    box-shadow: 0 0 0 0 #FFF;
+}
+.btn:hover i{
+    transform: scale(2);
+    color: #FFF;
+    text-shadow: 0 0 10px #FFF;
+}
